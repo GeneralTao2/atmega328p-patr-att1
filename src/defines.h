@@ -1,0 +1,112 @@
+//#ifndef defines_h
+//#define defines_h
+
+//#define ATMEGA32
+#define ATMEGA328P
+
+#ifndef F_CPU
+#define F_CPU 16000000UL
+#endif
+
+#define PORT_QUANTITY 4
+
+#define TCK_SPEED_0 0u
+#define TCK_SPEED_1_BACK 1u
+#define TCK_SPEED_2_BACK 2u
+#define TCK_SPEED_1_FRWD 3u
+#define TCK_SPEED_2_FRWD 4u
+
+#define ADC_CHANNEL_QUANTITY 8u
+
+#define BYTE_LENTH 8u
+#define HALF_OF_BYTE_LENTH 4u
+
+#define LCD_LINE_LENGTH 16u
+#define LCD_CURRENT_CHARACTERS_QUANTITY LCD_LINE_LENGTH*2u
+
+#define LCD_LINE_1 0u
+#define LCD_LINE_2 1u
+
+#define D_FALSE 0u
+#define D_TRUE 1u
+
+#define D_FAIL 0u
+#define D_SUCCESS 1u
+
+
+#define ETL_OBJECT_QUANTITY 16u
+#define ETL_ERROR_QUANTITY 16u
+#define ETL_ERROR_BUFFER_LENGTH 8u
+
+#define ETL_TWI_OBJ 0x05
+#define ETL_TWI_TW_START_ERROR 0x00
+#define ETL_TWI_TW_MT_SLA_ACK_ERROR 0x01
+#define ETL_TWI_TW_MR_SLA_ACK_ERROR 0x02
+#define ETL_TWI_TW_MT_DATA_ACK_ERROR 0x03
+#define ETL_TWI_TW_MR_DATA_ACK_ERROR 0x04
+#define ETL_TWI_TW_MR_DATA_NACK_ERROR 0x05
+#define ETL_TWI_TW_START_TIMEOUT 0x06
+#define ETL_TWI_TW_MT_SLA_ACK_TIMEOUT 0x07
+#define ETL_TWI_TW_MR_SLA_ACK_TIMEOUT 0x08
+#define ETL_TWI_TW_MT_DATA_ACK_TIMEOUT 0x09
+#define ETL_TWI_TW_MR_DATA_ACK_TIMEOUT 0x0Au
+#define ETL_TWI_TW_MR_DATA_NACK_TIMEOUT 0x0Bu
+#define ETL_TWI_UNDEFIND 0x0Cu
+
+#define ERR_NO_ERROR 0u
+#define ERR_STR_WRONG_CHARACTER 1u
+#define ERR_STR_WRONG_HEX_DIGIT 2u
+#define ERR_CMD_COMMAND_NOT_FOUND 3u
+#define ERR_CMD_CURROPTED_PACKAGE 4u
+#define ERR_CMD_LED_WRONG_LED_ID 5u
+#define ERR_CMD_LED_WRONG_LED_STATE 6u
+#define ERR_CMD_LCD_WRONG_LINE_ID 7u
+#define ERR_CMD_LCD_WRONG_POSITION 8u
+#define ERR_CMD_BZ_WRONG_TIME 9u
+#define ERR_CMD_OLED_WRONG_CONTROL_BYTE 10u
+#define ERR_CMD_OLED_WRONG_COMMAND_ID 11u
+#define ERR_CMD_OLED_FAIL_TO_STOP 12u
+#define ERR_CMD_OLED_FAIL_TO_START 13u
+#define ERR_CMD_MOT_WRONG_DIRECTION_ID 14u
+#define ERR_CMD_MOT_IS_BUSY 15u
+#define ERR_CMD_TWI_IS_BUSY 16u
+
+#ifdef ATMEGA32
+#define CP_START_PORT CP_A
+#endif
+#ifdef ATMEGA328P
+#define CP_START_PORT CP_B
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//#endif

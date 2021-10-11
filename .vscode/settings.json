@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "stdbool.h": "c",
+        "pwm.h": "c",
+        "motorencoder.h": "c",
+        "stringmanager.h": "c",
+        "signalgateway.h": "c",
+        "motorcontroller.h": "c",
+        "termocontrol.h": "c"
+    }
+}
